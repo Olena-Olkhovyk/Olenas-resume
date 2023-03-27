@@ -114,3 +114,45 @@ body {
     backdrop-filter: hue-rotate(90deg);
   }
 }
+/*Contact-form*/
+.container-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+}
+.contact-header h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font: 40px bold;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+form label {
+  display: block;
+  text-align: start;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  resize: none;
+  border: 1px solid gainsboro;
+  margin-bottom: 1rem;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+input.submit {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #9f988ac5;
+}
+input.submit:hover {
+  background-color: #9f988a9e;
+}
