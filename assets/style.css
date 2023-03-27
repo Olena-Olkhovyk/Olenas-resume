@@ -80,3 +80,37 @@ body {
   line-height: 2;
   font-size: 21px;
 }
+/* image */
+.header-image img {
+  width: 500px;
+  height: 600px;
+  animation: ava-bg 3s infinite alternate;
+}
+.header-image {
+  max-width: 500px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  animation: ava-animate 5s infinite alternate;
+}
+
+@keyframes ava-animate {
+  0% {
+    border-radius: 27% 73% 48% 52% / 17% 38% 62% 83%;
+  }
+  40% {
+    border-radius: 61% 39% 69% 31% / 51% 59% 41% 49%;
+  }
+  60% {
+    border-radius: 40% 60% 23% 77% / 24% 49% 51% 76%;
+  }
+  100% {
+    border-radius: 28% 72% 56% 44% / 71% 26% 74% 29%;
+  }
+}
+@keyframes ava-bg {
+  from {
+    backdrop-filter: hue-rotate(0);
+  }
+  to {
+    backdrop-filter: hue-rotate(90deg);
+  }
+}
