@@ -16,3 +16,47 @@ body {
     padding: 0 30px;
     margin: 0 auto;
   }
+.header {
+    padding-top: 20px;
+  }
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    padding: 0 12px 3px 0;
+    line-height: 1;
+    position: relative;
+  }
+.logo::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 213, 0, 0.831);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+.nav-list {
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+.nav-button {
+    display: none;
+  }
+.nav-items {
+    list-style: none;
+  }
+.nav-link {
+    text-decoration: none;
+    color: black;
+  }
