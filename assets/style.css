@@ -156,3 +156,9 @@ input.submit {
 input.submit:hover {
   background-color: #9f988a9e;
 }
+.olena-by-water {
+  width: 450px;
+  height: 270px;
+  position: relative;
+  top: 0;
+}
