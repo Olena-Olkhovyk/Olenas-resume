@@ -26,4 +26,16 @@
 	top: 46px;
 	right: 30px;
 }
+.header-content{
+	margin-top: 30px;
+}
+.header-row{
+	flex-direction: column;
+	gap:30px;
+}
+.header-image img{
+	width: 400px;
+  height: 500px;
+  text-align: center;
+}
 }
