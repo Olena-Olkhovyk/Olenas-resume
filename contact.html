@@ -1,108 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page-contact form,for people be able to contact me"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page-contact form,for people be able to contact me"
+    />
     <meta name="author" content="Olena Olkhovyk" />
     <meta name="keywords" content="contact form,number" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/media.css" />
     <title>Contact form</title>
-</head>
-<body>
-   <div class="container">
-        <header class="header">
-            <div class="header-nav">
-                 <a href="#!" class="logo">Alyona</a>
-              <nav id="nav" class="nav">
-                <ul class="nav-list">
-                  <li class="nav-items">
-                    <a href="/" class="nav-link">Home</a>
-                   </li>
-                  <li class="nav-items">
-                    <a href="resume.html" class="nav-link">Google resume</a>
-                  </li>
-                  <li class="nav-items">
-                    <a href="galery.html" class="nav-link">Galery</a>
-                  </li>
-                  <li class="nav-items">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                  </li>
-                </ul>
-                     <button id="nav-btn" class="nav-button">
-                        <img src="./img/NAV.svg" id="nav-btn-img" alt="Nav button" />
-                     </button>
-              </nav>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-nav">
+          <a href="#!" class="logo">Alyona</a>
+          <nav id="nav" class="nav">
+            <ul class="nav-list">
+              <li class="nav-items">
+                <a href="/" class="nav-link">Home </a>
+              </li>
+              <li class="nav-items">
+                <a href="resume.html" class="nav-link">Google resume</a>
+              </li>
+              <li class="nav-items">
+                <a href="galery.html" class="nav-link">Galery</a>
+              </li>
+              <li class="nav-items">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-button">
+              <img src="./img/NAV.svg" id="nav-btn-img" alt="Nav button" />
+            </button>
+          </nav>
+        </div>
+      </header>
+      <section class="container-form">
+        <div class="contact-form">
+          <header class="contact-header">
+            <h2>Get in touch & hire Olena</h2>
+          </header>
+          <form action="#" method="post">
+            <div>
+              <label for="name">Name*</label>
+              <input type="text" name="name" id="name" required />
             </div>
-        </header>
-        <section class="container-form">
-            <div class="contact-form">
-              <header class="contact-header">
-                <h2>Get in touch & hire Olena</h2>
-              </header>
-                <form action="#" method="post">
-                    <div>
-                      <label for="name">Name*</label>
-                      <input type="text" name="name" id="name" required />
-                    </div>
-                    <div>
-                      <label for="email">Email*</label>
-                      <input type="email" name="email" id="email" required />
-                    </div>
-                    <div>
-                      <label for="text">Phone*</label>
-                      <input type="text" name="text" id="text" required />
-                    </div>
-                    <div>
-                      <label for="message">Message*</label>
-                      <textarea
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="10"
-                        required
-                      ></textarea>
-                    </div>
-                    <div>
-                      <input type="button" class="submit" value="submit" />
-                    </div>
-                </form>
+            <div>
+              <label for="email">Email*</label>
+              <input type="email" name="email" id="email" required />
             </div>
-            <div class="contact-info">
-              <img src="./img/me1.jpg" alt="Olena by see" class="olena-by-water" />
-              <h3>Contact Info</h3>
-              <p class="email">
-                <strong>Email:</strong>
-                <a href="mailto:alenagurkov6@gmail.com">alenagurkov6@gmail.com</a>
-              </p>
-              <p class="phone"><strong>Phone:</strong>+4915121380883</p>
-              <p class="adress">
-                <strong>Adress:</strong>24,Steglitzer Damm - 12169 Berlin,Germany
-              </p>
-              <p class="networks">
-                <strong>Social Networks:</strong>
-              </p>
-              <div class="links">
-                <a
-                  href="https://www.linkedin.com/in/olena-olkhovyk-aa191a260/"
-                  class="linkedin"
-                  target="_blank"
-                  >Linkedin</a
-                >
-              </div>
-              <div class="links">
-                <a
-                  href="https://instagram.com/tendre_alyona?igshid=YmMyMTA2M2Y="
-                  target="_blank"
-                  class="insta"
-                  >Instagram</a
-                >
-              </div>
+            <div>
+              <label for="text">Phone*</label>
+              <input type="text" name="text" id="text" required />
             </div>
-        </section>
-   </div> 
-   <script src="./js/main.js"></script> 
-</body>
+            <div>
+              <label for="message">Message*</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <input type="button" class="submit" value="submit" />
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <img src="./img/me1.jpg" alt="Olena by see" class="olena-by-water" />
+          <h3>Contact Info</h3>
+          <p class="email">
+            <strong>Email:</strong>
+            <a href="mailto:alenagurkov6@gmail.com">alenagurkov6@gmail.com</a>
+          </p>
+          <p class="phone"><strong>Phone:</strong>+4915121380883</p>
+          <p class="adress">
+            <strong>Adress:</strong>24,Steglitzer Damm - 12169 Berlin,Germany
+          </p>
+          <p class="networks">
+            <strong>Social Networks:</strong>
+          </p>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/olena-olkhovyk-aa191a260/"
+              class="linkedin"
+              target="_blank"
+              >Linkedin</a
+            >
+          </div>
+          <div class="links">
+            <a
+              href="https://instagram.com/tendre_alyona?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              class="insta"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
