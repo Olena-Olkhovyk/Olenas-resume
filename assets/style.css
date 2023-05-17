@@ -165,15 +165,14 @@ input.submit:hover {
   top: 0;
 }
 .contact-info {
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 24px 10px rgba(0, 0, 0, 0.2);
 }
 .contact-info h3 {
-  text-align: center;
+  position: relative;
+  left:10rem;
   font-size: 25px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #9f988a9e;
-}
+  }
 .email,
 .phone,
 .adress {
@@ -193,15 +192,13 @@ input.submit:hover {
   text-decoration: none;
   color: #1a0dab;
 }
-.links .linkedin {
-  display: block;
-  margin: 10px 0 10px 15px;
-  font-size: 19px;
-  border-bottom: 1px solid #9f988a9e;
+.links{
+  display: flex;
+  flex-direction: column;
 }
-.links .insta {
-  display: block;
+.linkedin,
+.insta{
+  margin: 10px 0 10px 15px;
   font-size: 19px;
   border-bottom: 1px solid #9f988a9e;
-  margin: 10px 0 10px 15px;
 }
