@@ -45,18 +45,18 @@
           <header class="contact-header">
             <h2>Get in touch & hire Olena</h2>
           </header>
-          <form action="#" method="post">
+          <form id="main-form">
             <div>
               <label for="name">Name*</label>
-              <input type="text" name="name" id="name" required />
+              <input type="text" name="name" id="name"  />
             </div>
             <div>
               <label for="email">Email*</label>
-              <input type="email" name="email" id="email" required />
+              <input type="email" name="email" id="email"  />
             </div>
             <div>
               <label for="text">Phone*</label>
-              <input type="text" name="text" id="text" required />
+              <input type="text" name="phone" id="text"  />
             </div>
             <div>
               <label for="message">Message*</label>
@@ -65,11 +65,11 @@
                 id="message"
                 cols="30"
                 rows="10"
-                required
               ></textarea>
             </div>
+            <div id="error"></div>
             <div>
-              <input type="button" class="submit" value="submit" />
+              <input type="submit" id="btn" class="submit" value="submit" />
             </div>
           </form>
         </div>
