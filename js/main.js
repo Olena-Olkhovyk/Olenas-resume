@@ -3,7 +3,7 @@ const navBtn = document.querySelector('#nav-btn');
 const navBtnImg = document.querySelector('#nav-btn-img');
 
 const form=document.getElementById("main-form");
-form.addEventListener("submit", checkForm);
+
 
 navBtn.onclick= () => {
     if (nav.classList.toggle("open")){
@@ -23,17 +23,25 @@ function checkForm(e){
     const name=document.getElementById("name").value;
     const email=document.getElementById("email").value;
     const phone=document.getElementById("phone").value;
+    let emailError=document.getElementById("emailErr");
+    let nameError = document.getElementById("nameErr");
+    let mobError=document.getElementById("mobileErr");
     let nameErr=(emailErr=mobileErr=true);
 //Checking name 
     if(name == "") {
         printError("nameErr", "Please enter your name");
-    }  else {
+        nameError.style.color="red";
+    } else if(name.length<=1||name.length>20){
+        printError("nameErr","Please enter your full name");
+    }
+      else {
             printError("nameErr", "");
             nameErr = false;
         }
 //Checking email
         if(email==""){
             printError("emailErr", "Please enter your email");
+            emailError.style.color="red";
         }else{
             printError("emailErr", "");
             emailErr=false;
@@ -41,6 +49,7 @@ function checkForm(e){
 //Checking mobile phone
         if(phone==""){
             printError("mobileErr", "Please enter your mobile phone");
+            mobError.style.color="red";
         }else{
             let equat=/^[\d\+][\d\(\)\ -]{4,14}\d$/;
             if(equat.test(phone)===false){
@@ -51,5 +60,5 @@ function checkForm(e){
             }
         }
     }
-
+    form.addEventListener("submit", checkForm);
 
