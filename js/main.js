@@ -33,6 +33,7 @@ function checkForm(e){
         nameError.style.color="red";
     } else if(name.length<=1||name.length>20){
         printError("nameErr","Please enter your full name");
+        nameError.style.color="red";
     }
       else {
             printError("nameErr", "");
