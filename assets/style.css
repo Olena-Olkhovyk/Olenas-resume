@@ -10,24 +10,44 @@
 *::after {
     box-sizing: border-box;
   }
-body {
+  body {
     color: black;
   }
-.container {
+  .container {
     max-width: 1200px;
     padding: 0 30px;
     margin: 0 auto;
   }
   /* Navbar and logo */
-.header {
+  .header {
     padding-top: 20px;
   }
-.header-nav {
-    display: flex;
+  .logo-head{
+		display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 60px;
-  }
-.logo {
+	}
+	.nav-button {
+		font-size: 1.5rem;
+		display: block;
+		cursor: pointer;
+	  }
+	.links-container {
+		height: 0;
+		overflow: hidden;
+		transition: var(--transition);
+	  }
+	.nav-link{
+		background-color: white;
+		color: grey;
+		font-size: 1.1rem;
+		text-transform: capitalize;
+		display: block;
+		transition: all 0.3s linear;
+		font-weight: bold;
+		padding: 0.75rem 0;
+	  }
+  .logo {
     font-size: 32px;
     font-weight: 700;
     color: black;
@@ -36,7 +56,7 @@ body {
     line-height: 1;
     position: relative;
   }
-.logo::after {
+  .logo::after {
     content: "";
     display: block;
     width: 8px;
@@ -47,29 +67,14 @@ body {
     bottom: 0;
     right: 0;
   }
-.nav-list {
-    display: flex;
-    gap: 20px;
-    font-weight: 500;
-    font-size: 20px;
-  }
-.nav-button {
-    display: none;
-  }
-.nav-items {
-    list-style: none;
-  }
-.nav-link {
-    text-decoration: none;
-    color: black;
-  }
+
 /* main content */
-.header-row {
+ .header-row {
   display: flex;
   justify-content: space-between;
   gap: 70px;
 }
-.header-content {
+ .header-content {
   max-width: 500px;
   margin-top: 124px;
 }
@@ -115,91 +120,86 @@ body {
   to {
     backdrop-filter: hue-rotate(90deg);
   }
-}
+} */ */
 /*Contact-form*/
-.container-form {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-}
 .contact-form {
   width: 100%;
   max-width: 500px;
-}
+  }
 .contact-header h2 {
   margin-bottom: 0.5rem;
   text-align: center;
   font: 40px bold;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-}
-form label {
+  }
+  form label {
   display: block;
   text-align: start;
   font-weight: bold;
   text-transform: uppercase;
-}
-form input,
-form textarea {
+  }
+  form input,
+  form textarea {
   width: 100%;
   padding: 0.8rem;
   resize: none;
   border: 1px solid gainsboro;
   margin-bottom: 1rem;
-}
-form input:focus,
-form textarea:focus {
+  }
+  form input:focus,
+  form textarea:focus {
   outline: none;
-}
-input.submit {
+  }
+  input.submit {
   font-size: 20px;
   font-weight: bold;
   background-color: #9f988ac5;
-}
-input.submit:hover {
+  }
+  input.submit:hover {
   background-color: #9f988a9e;
   cursor: pointer;
-}
-.olena-by-water {
+  }
+  .olena-by-water {
   width: 450px;
   height: 270px;
   position: relative;
   top: 0;
-}
-.contact-info {
+  }
+  .contact-info {
   box-shadow: 0px 20px 24px 10px rgba(0, 0, 0, 0.2);
-}
-.contact-info h3 {
+  }
+  .contact-info h3 {
   position: relative;
   left:10rem;
   font-size: 25px;
   padding-bottom: 20px;
   }
-.email,
-.phone,
-.adress {
+  .email,
+  .phone,
+  .adress {
   font-size: 20px;
   margin-left: 10px;
   padding: 4px;
-}
-.email a {
+  }
+  .email a {
   text-decoration: none;
   color: #1a0dab;
-}
-.networks {
+  }
+  .networks {
   font-size: 22px;
   margin: 20px 0 0 15px;
-}
-.links a {
+  }
+  .links a {
   text-decoration: none;
   color: #1a0dab;
-}
-.links{
+  }
+  .links{
   display: flex;
   flex-direction: column;
-}
-.linkedin,
-.insta{
+  }
+  .linkedin,
+  .insta{
   margin: 10px 0 10px 15px;
   font-size: 19px;
   border-bottom: 1px solid #9f988a9e;
-}
+  }

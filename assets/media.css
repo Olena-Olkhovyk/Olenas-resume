@@ -1,57 +1,71 @@
-@media(max-width:1000px){
+@media(max-width:800px){
+	.header-content{
+		margin-top: 30px;
+		text-align: center;
+	}
+	.header-row{
+		flex-direction: column;
+		gap:30px;
+	}
+	.header-image img{
+		width: 400px;
+	  height: 500px;
+	}
+	/* cont form */
 	.container-form {
 		display: block;
 	  }
-	  .olena-by-water {
+
+	.olena-by-water {
 		width: 500px;
 	  }
-	  .links{
+	.links{
 		display:flex;
 		flex-direction: row;
 	  }
-	  .contact-info {
+	.contact-info {
 		box-shadow: none;
 	  }
-
-}
-@media (max-width: 900px) {
-    .nav-list {
-      display: none;
-    }
-    .nav-button {
-      display: block;
-    }
-   .nav.open .nav-list{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	}
+@media(min-width: 1100px) {
+	/* navbar */
+	.header-nav {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 60px;
+	  }
+	.logo-head{
+		padding: 0;
+	  }
+	.nav-button {
+		display: none;
+	  }
+	.links-container {
+		height: auto !important;
+	  }
+	.nav-list {
+		display: flex;
+		gap: 20px;
+		font-weight: 500;
+		font-size: 20px;
+	  }
+	
+	.nav-items {
+		list-style: none;
+	  }
+	.nav-link {
+		text-decoration: none;
+		color: black;
+		display: block;
+		margin: 0 1rem;
+		padding: 0;
+	  }
+	  /* contact form */
+    
+    .container-form {
 	display: flex;
-	flex-direction: column;
-	background-color: white;
-	z-index: 1;
-	padding: 46px 30px;
-	row-gap: 40px;
-	font-size: 34px;
-	font-weight: 600;;
+	justify-content: space-between;
+	gap: 50px;
+	}
 }
-.nav-button {
-	position: absolute;
-	z-index: 9;
-	top: 46px;
-	right: 30px;
-}
-.header-content{
-	margin-top: 30px;
-	text-align: center;
-}
-.header-row{
-	flex-direction: column;
-	gap:30px;
-}
-.header-image img{
-	width: 400px;
-  height: 500px;
-}
-}
+	

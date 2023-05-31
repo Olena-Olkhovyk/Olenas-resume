@@ -18,12 +18,15 @@
     <div class="container">
       <header class="header">
         <div class="header-nav">
-          <a href="#!" class="logo">Alyona</a>
-          <nav id="nav" class="nav">
+          <div class="logo-head">
+            <a href="#!" class="logo"> Alyona </a>
+            <button id="nav-btn" class="nav-button">
+              <img src="./img/NAV.svg" id="nav-btn-img" alt="Nav button" />
+            </button>
+          </div>
+          <div class="links-container">
             <ul class="nav-list">
-              <li class="nav-items">
-                <a href="/" class="nav-link">Home </a>
-              </li>
+              <li class="nav-items"><a href="/" class="nav-link">Home</a></li>
               <li class="nav-items">
                 <a href="resume.html" class="nav-link">Google resume</a>
               </li>
@@ -34,10 +37,7 @@
                 <a href="contact.html" class="nav-link">Contact</a>
               </li>
             </ul>
-            <button id="nav-btn" class="nav-button">
-              <img src="./img/NAV.svg" id="nav-btn-img" alt="Nav button" />
-            </button>
-          </nav>
+          </div>
         </div>
       </header>
       <section class="container-form">
@@ -48,17 +48,17 @@
           <form id="main-form" method="post">
             <div>
               <label for="name">Name*</label>
-              <input type="text" name="name" id="name"  />
+              <input type="text" name="name" id="name" />
               <div class="error" id="nameErr"></div>
             </div>
             <div>
               <label for="email">Email*</label>
-              <input type="email" name="email" id="email"  />
+              <input type="email" name="email" id="email" />
               <div class="error" id="emailErr"></div>
             </div>
             <div>
               <label for="text">Phone*</label>
-              <input type="text" name="phone" id="phone"  />
+              <input type="text" name="phone" id="phone" />
               <div class="error" id="mobileErr"></div>
             </div>
             <div>
@@ -102,7 +102,7 @@
               class="insta"
               >Instagram</a
             >
-            </div>
+          </div>
         </div>
       </section>
     </div>

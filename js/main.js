@@ -1,18 +1,25 @@
-const nav = document.querySelector('#nav');
-const navBtn = document.querySelector('#nav-btn');
-const navBtnImg = document.querySelector('#nav-btn-img');
+
 
 const form=document.getElementById("main-form");
 
 
-navBtn.onclick= () => {
-    if (nav.classList.toggle("open")){
-     navBtnImg.src = "./img/NAV CLOSE.svg";
-    }
-    else{
-     navBtnImg.src = './img/NAV.svg';
-    }
-}
+const btn = document.querySelector(".nav-button");
+const linksContainer = document.querySelector(".links-container");
+const links = document.querySelector(".nav-list");
+
+btn.addEventListener("click", function () {
+  // linksContainer.classList.toggle("show-links");
+
+  const linksHeight = links.getBoundingClientRect().height;
+  const containerHeight = linksContainer.getBoundingClientRect().height;
+  if (containerHeight === 0) {
+    linksContainer.style.height = `${linksHeight}px`;
+  } else {
+    linksContainer.style.height = 0;
+  }
+});
+
+
 //Display error message
 function printError(elemId,hintMsg){
     document.getElementById(elemId).innerHTML=hintMsg;
