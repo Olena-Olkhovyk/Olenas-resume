@@ -35,7 +35,7 @@
 	.links-container {
 		height: 0;
 		overflow: hidden;
-		transition: var(--transition);
+    transition: all 0.3s linear;
 	  }
 	.nav-link{
 		background-color: white;
