@@ -26,9 +26,23 @@
 	.contact-info {
 		box-shadow: none;
 	  }
-	  .contact-form {
+	.contact-form {
 		width: 100%;
 		max-width: 500px;
+	  }
+	.logo-head {
+		background-color: rgba(128, 128, 128, 0.043);
+	  }
+	.links-container {
+		background-color: rgba(128, 128, 128, 0.043);
+	  }
+	.nav-link {
+		background-color: transparent;
+		text-decoration: none;
+		font-size: 20px;
+	  }
+	  .nav-link:hover{
+		color:black;
 	  }
 	}
 @media(min-width: 900px) {
