@@ -29,7 +29,9 @@ function checkForm(e){
     let emailError=document.getElementById("emailErr");
     let nameError = document.getElementById("nameErr");
     let mobError=document.getElementById("mobileErr");
-    let nameErr=(emailErr=mobileErr=true);
+    let nameErr=true;
+    let emailErr=true;
+    let mobileErr=true;
 //Checking name 
     if(name == "") {
         printError("nameErr", "Please enter your name");
