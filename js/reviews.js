@@ -3,9 +3,9 @@ const reviews = [
     {
       id: 1,
       name: "Olena Voloshina",
-      job: "Head of the contact center of Privat Bank",
+      job: "Director, Customer Service department Privat Bank",
       img: "./img/Olena.jpg",
-      text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+      text: "As the director of Privat Bank's customer Service department, Olena proved to me her initiative-oriented prowess. She coped successfully  with her official duties and  also has good business communication skills. Olena  has a high working capacity, strongly supports the work of the company in difficult moments, even outside working hours. In the team, she expressed her point of view and took the initiative to help team members adapt to the team.",
     },
     {
       id: 2,
@@ -18,8 +18,8 @@ const reviews = [
       id: 3,
       name: "Oleksandr Chelombitko",
       job: "Privatbank supervisor",
-      img: "./img/me1.jpg",
-      text: "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+      img: "./img/Sacha.jpg",
+      text: "During the period of long-term work with Olena, I can only give positive feedback. She was always responsible and proactive. Olena was never afraid of new challenges and changes. She always tries her possible best to find solutions quickly and efficiently. In her team, she has established herself as a leader both in work processes and in the life of the team. She has organizational and initiative-oriented  skills.",
     }
   ];
   //reviews
