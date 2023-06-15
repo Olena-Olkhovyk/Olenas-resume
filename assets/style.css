@@ -293,3 +293,14 @@
   background: hsl(205, 78%, 60%);
   color: hsl(205, 86%, 17%);
 }
+/* GALERY PAGE */
+.fa-solid{
+  font-size: 60px;
+  margin-left: 1rem;
+}
+.galery-header a{
+  color:black;
+}
+.galery-header a:hover{
+  color:rgba(0, 0, 0, 0.42);
+}
